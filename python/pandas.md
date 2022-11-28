@@ -81,6 +81,38 @@ df = df.set_index('column_name') # will replace index by values of column_name
 ### Add column
 ```py
 df['new_column'] = df['column_1'] + df['column_2']
+df['new_column'] = df['column_1'] > df['column_2'] # a column with boolean values
+```
+
+### Apply a func to each value
+```py
+df = df.apply(func) # to all the DataFrame
+df = df.apply(func, axis=1) # to each row
+df['column_name'] = df['column_name'].map(func) # to a specific column
+```
+
+### Sorting
+```py
+df.sort_values('column_name')
+```
+
+### Drop column
+```py
+df = df.drop(columns='column_name')
+```
+
+### Group
+```py
+df = df.groupby(['column_name']).sum() # group by column_name and sum values
+df = df['column_name1'].groupby(['column_name2']).sum() # group by column_name2 and sum column_name1
+df = df.groupby(['column_name1', 'column_name2']).sum() # group by column_name1 and column_name2 and sum values
+df = df[['column_name1', 'column_name2']].groupby(['column_name1']).sum() # group by column_name1 and sum column_name1 and column_name2
+```
+
+### Concatenate
+```py
+df = pd.concat([df1, df2]) # concatenate df1 and df2
+df = pd.concat([df1, df2], axis=1) # concatenate df1 and df2 by columns
 ```
 
 # Select
