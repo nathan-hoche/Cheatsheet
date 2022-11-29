@@ -5,4 +5,6 @@
 ## Python
 [x] numpy
 [x] pandas
+[ ] matplotlib
 [ ] scikit-learn
+[ ] keras
