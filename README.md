@@ -3,6 +3,6 @@
 # List of packages
 
 ## Python
-[x] numpy
-[x] pandas
-[ ] scikit-learn
+- [x] numpy
+- [x] pandas
+- [ ] scikit-learn
