@@ -6,5 +6,5 @@
 - [x] numpy
 - [x] pandas
 - [x] matplotlib
-- [ ] scikit-learn
+- [x] scikit-learn
 - [ ] keras
